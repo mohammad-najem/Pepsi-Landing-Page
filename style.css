@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "be vietnam";
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    overflow: hidden;
+    background-color: #4169e1;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-left: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    transition: all .3s;
+    margin-left: 40px;
+}
+
+nav ul li a:hover, .cta:hover{
+    opacity: .6;
+}
+
+nav button, .header_main_content button {
+    padding: 8px 35px;
+    background-color: #4169e1;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    box-shadow: 0 5px 20px 0px rgba(0,0,0,0.3);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.cta2 {
+    background-color: rgb(248, 46, 46);
+}
+
+.header_main {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 200px;
+}
+
+.header_main_content_h1 {
+    font-size: 63px;
+}
+
+.header_main_content_p {
+    margin-top: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+.header_main_img img {
+    margin-top: 50px;
+}
+
+.header_main_content button{
+    margin-top: 20px;
+    background-color: rgb(248, 46, 46);
+    margin-bottom: 30px;
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./images/wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: .5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: .2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: .7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2{
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: -1000px;
+    }
+}
